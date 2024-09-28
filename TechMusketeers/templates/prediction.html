@@ -1,0 +1,154 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="feed_data.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!--Icons Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+    <title>Hackera</title> 
+</head>
+<body>
+    
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="mach.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Induspredictor</span>
+                    
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                   <!---- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Reference Data</span>
+                        </a>
+                    </li><-->
+                    <li class="nav-link">
+                        <a href="reference_data.html">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Reference Data</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="/feed_data.html">
+                            <i class='bx bx-data icon'></i>
+                            <span class="text nav-text">Feed Data</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/prediction.html">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Prediction</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Visualization</span>
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+               
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+    
+    <section class="home">
+        <div class="text">
+            Prediction
+        </div>
+        <div class="ic1">
+            <i class='bx bx-pie-chart-alt icon' ></i>
+        </div>
+    </section>
+
+    <div class="predict">
+      <h4>Predict Anolmaly you provide following features :</h4> 
+      <ul>
+        <li><h5>Sensor - 1 = {{sensor_1}}</h5></li>
+        <li><h5>Sensor - 2 = {{sensor_2}}</h5></li>
+        <li><h5>Sensor - 3 = {{sensor_3}}</h5></li>
+        <li><h5>Operation Hours = {{operation_hours}}</h5></li>
+      </ul>
+      <h5 id="p1">Predicted Maintenance is : {{result}} </h5>
+        
+        <!-- Buttons -->
+      
+        <button type="button" class="btn btn-primary" onclick="handleSubmit()">Back</button>
+    
+       
+    </div>
+    
+      
+        </div>
+        <script>
+          function goBack() {
+    // Replace 'page1.html' with the path to the desired HTML file
+    <a href="/feed_data.html" class="btn btn-primary">Back</a> 
+}
+
+       
+        </script>
+    <script src="feed_data.js"></script>
+
+</body>
+</html>
